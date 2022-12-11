@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('../fonts/TTNormsPro-Medium.eot');
+    src: local('../fonts/TT Norms Pro Medium'), local('TTNormsPro-Medium'),
+        url('../fonts/TTNormsPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTNormsPro-Medium.woff2') format('woff2'),
+        url('../fonts/TTNormsPro-Medium.woff') format('woff'),
+        url('../fonts/TTNormsPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+body {
+	text-decoration: none;
+	font-family: 'TT Norms Pro', sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+.background {
+	max-width: 1920px;
+	height: 1080px;
+	background: url(../img/HeroBackground.jpg);
+	display: flex;
+	justify-content: center;
+}
+
+.card{
+	max-width: 1140px;
+	height: 700px;
+	background: url(../img/backgroud-img.jpg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+}
