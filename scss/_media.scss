@@ -1,0 +1,50 @@
+@media ("max-width: 340px") {
+	.card {
+		background-size: cover;
+		background-size: 500px 700px;
+	}
+	.header {
+		max-height: 140px;
+	}
+	.header__logo img {
+			width: 105px;
+			max-height: 20px;
+	}
+	.menu {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.tariffs {
+		display: flex;
+		flex-wrap: wrap;
+	}
+    .menu__item {
+    }
+	.within {
+		width: 154px;
+		display: flex;
+		flex-direction: column;
+	}
+	.film__logo img {
+		width: 0;
+	}
+}
+
+@media ("max-width: 900px") {
+	.header {
+		max-height: 140px;
+	}
+	.header__logo img {
+			max-width: 70px;
+			max-height: 20px;
+	}
+	.menu {
+		display: flex;
+		flex-wrap: wrap;
+		margin: none;
+	}
+	.tariffs {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
