@@ -26,18 +26,70 @@ li {
 }
 
 .background {
-	max-width: 1920px;
-	height: 1080px;
 	background: url(../img/HeroBackground.jpg);
+	background-size: cover;
 	display: flex;
 	justify-content: center;
 }
 
 .card{
+	width: calc((100% - 1 * 2 * 5px) / 1);
 	max-width: 1140px;
 	height: 700px;
 	background: url(../img/backgroud-img.jpg);
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
+}
+
+@media ("max-width: 340px") {
+	.card {
+		background-size: cover;
+		background-size: 500px 700px;
+	}
+	.header {
+		max-height: 140px;
+	}
+	.header__logo img {
+			width: 105px;
+			max-height: 20px;
+	}
+	.menu {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: none;
+	}
+	.tariffs {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.within {
+		width: 154px;
+		display: flex;
+		flex-direction: column;
+	}
+	.film__logo img {
+		width: 0;
+	}
+	.film__logo {
+	}
+}
+
+@media ("max-width: 900px") {
+	.header {
+		max-height: 140px;
+	}
+	.header__logo img {
+			max-width: 70px;
+			max-height: 20px;
+	}
+	.menu {
+		display: flex;
+		flex-wrap: wrap;
+		margin: none;
+	}
+	.tariffs {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }

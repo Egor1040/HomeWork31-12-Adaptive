@@ -5,24 +5,25 @@
 }
 
 .film {
+	max-width: 1140px;
 	height: 290px;
 	margin-top: auto;
 	@include flex($jc:none,$ai:center);
 	background: $FilmBg;
 	&__logo {
 		margin: 15px;
-		width: 140px;
-		height: 210px;
+		max-width: 140px;
+		max-height: 210px;
 	}
 	&__logo img {
-		width: 140px;
-		height: 210px;
+		max-width: 140px;
+		max-height: 210px;
 	}
 }
 
 .description {
 	margin-top: 44px;
-	width: 400px;
+	max-width: 400px;
 	height: 220px;
 }
 
@@ -34,7 +35,7 @@
 		font-weight: bold;
 	}
 	&__rate {
-		width: 350px;
+		max-width: 350px;
 		display: flex;
 		justify-content: space-between;
 	}
