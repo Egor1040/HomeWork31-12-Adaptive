@@ -60,7 +60,13 @@ li {
           align-items: center;
 }
 .header__logo {
-  max-height: 20px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header__logo img {
   max-width: 120px;
@@ -94,10 +100,46 @@ li {
   width: 30px;
   margin-top: 5px;
 }
+.menu__item-buttom:hover {
+  background: #ffffff;
+}
+.menu__item-buttom {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__item-bar {
+  background: #ffffff;
+  width: 240px;
+  top: 50px;
+  left: 0px;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translateY(100);
+          transform: translateY(100);
+  z-index: 10;
+  overflow: hidden;
+}
+.menu__item-buttom:hover .menu__item-bar {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 
 .tariffs {
   margin: 6px;
-  width: 230px;
+  width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,7 +299,7 @@ li {
   font-size: 13px;
 }
 .within__film-name {
-  height: 100px;
+  height: 90px;
   width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -277,6 +319,9 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.panel p {
+  margin-top: 10px;
 }
 
 .buttoms__buttom-watch {
@@ -413,6 +458,9 @@ li {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .menu__item {
+    display: none;
   }
   .within {
     width: 154px;

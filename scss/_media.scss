@@ -1,4 +1,4 @@
-@media ("max-width: 340px") {
+@media (max-width: 340px) {
 	.card {
 		background-size: cover;
 		background-size: 500px 700px;
@@ -19,6 +19,7 @@
 		flex-wrap: wrap;
 	}
     .menu__item {
+		display: none;
     }
 	.within {
 		width: 154px;
@@ -30,7 +31,7 @@
 	}
 }
 
-@media ("max-width: 900px") {
+@media (max-width: 900px) {
 	.header {
 		max-height: 140px;
 	}

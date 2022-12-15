@@ -8,7 +8,9 @@
 	background: $HeaderBackground;
 	@include flex($jc: space-between,$ai: center);
 	&__logo {
-		max-height: 20px;
+		height: 50px;
+		display: flex;
+		align-items: center;
 	}
 	&__logo img {
 		max-width: 120px;
@@ -34,11 +36,38 @@
 		width: 30px;
 		margin-top: 5px;
 	}
+	&__item-buttom:hover {
+		background: #ffffff;
+	}
+	&__item-buttom {
+		position: relative;
+		height: 50px;
+    	width: 50px;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+	}
+	&__item-bar {
+		background: #ffffff;
+		width: 240px;
+		top: 50px;
+		left: 0px;
+		position: absolute;
+		transition: transform .3s;
+		transform: translateY(100);
+    	z-index: 10;
+    	overflow: hidden;
+	}
+	&__item-buttom:hover .menu__item-bar {
+		transform: translateY(0);
+	}
+
 }
+
 
 .tariffs {
 	margin: 6px;
-	width: 230px;
+	width: 260px;
 	@include flex ($jc: space-around,$ai: center);
 	& a:hover {
 		color: $MenuItemHover;

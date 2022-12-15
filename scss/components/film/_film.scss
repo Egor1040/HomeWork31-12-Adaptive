@@ -57,7 +57,7 @@
 		font-size: 13px;
 	}
 	&__film-name {
-		height: 100px;
+		height: 90px;
 		width: 300px;
 		@include flex($jc: flex-start,$ai: center);
 		font-size: 30px;
@@ -68,6 +68,9 @@
 .panel {
 	width: 390px;
 	display: flex;
+	& p {
+		margin-top: 10px;
+	}
 }
 
 .buttoms {
