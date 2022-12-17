@@ -5,6 +5,7 @@
 }
 
 .sound {
+	z-index: 10;
 	margin: 20px;
 	@include flex($jc: flex-end,$ai: none);
 	&__icon {

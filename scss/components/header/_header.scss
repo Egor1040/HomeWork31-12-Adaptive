@@ -5,6 +5,7 @@
 }
 
 .header {
+	z-index: 10;
 	background: $HeaderBackground;
 	@include flex($jc: space-between,$ai: center);
 	&__logo {
@@ -72,6 +73,18 @@
 	&__item-sport:hover .menu__item_bar-sport {
 		transform: scale(100%);
 	}
+	&__item-buttom {
+		cursor: pointer;
+		position: relative;
+		height: 50px;
+    	width: 54px;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+	}
+	&__item-buttom:hover {
+		background: #ffffff;
+	}
 	&__item-img {
 		font-size: 27px;
 		color: gray;
@@ -79,18 +92,6 @@
 		&:hover {
 			color: $MenuItemHover;
 		}
-	}
-	&__item-buttom:hover {
-		background: #ffffff;
-	}
-	&__item-buttom {
-		cursor: pointer;
-		position: relative;
-		height: 50px;
-    	width: 50px;
-    	display: flex;
-    	justify-content: center;
-    	align-items: center;
 	}
 	&__item-bar {
 		display: flex;
