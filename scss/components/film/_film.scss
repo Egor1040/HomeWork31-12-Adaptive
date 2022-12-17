@@ -16,8 +16,8 @@
 		max-height: 210px;
 	}
 	&__logo img {
-		max-width: 140px;
-		max-height: 210px;
+		width: 140px;
+		height: 210px;
 	}
 }
 
@@ -35,7 +35,7 @@
 		font-weight: bold;
 	}
 	&__rate {
-		max-width: 350px;
+		width: 350px;
 		display: flex;
 		justify-content: space-between;
 	}

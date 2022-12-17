@@ -13,6 +13,7 @@
 		align-items: center;
 	}
 	&__logo img {
+		padding-left: 20px;
 		max-width: 120px;
 		max-height: 20px;
 	}
@@ -32,14 +33,58 @@
 		font-size: 16px;
 		letter-spacing: .8px;
 	}
+	&__item-sport {
+		cursor: pointer;
+		color: white;
+		position: relative;
+		width: 60px;
+    	height: 50px;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+	}
+	&__item-sport:hover {
+		background: white;
+		color: $MenuItemHover;
+	}
+	&__item_bar-sport {
+		background: #ffffff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		background: #fff;
+		width: 240px;
+		height: 200px;
+		top: 50px;
+		left: 0;
+		position: absolute;
+		transition: transform .1s;
+		transform: scale(0);
+    	z-index: 1;
+		box-shadow: 5px 5px 3px;
+		font-size: 14px;
+		color: #333333;
+		& li:hover {
+			color: $MenuItemHover;
+		}
+	}
+	&__item-sport:hover .menu__item_bar-sport {
+		transform: scale(100%);
+	}
 	&__item-img {
-		width: 30px;
-		margin-top: 5px;
+		font-size: 27px;
+		color: gray;
+		padding: 4px 17px 17px;
+		&:hover {
+			color: $MenuItemHover;
+		}
 	}
 	&__item-buttom:hover {
 		background: #ffffff;
 	}
 	&__item-buttom {
+		cursor: pointer;
 		position: relative;
 		height: 50px;
     	width: 50px;
@@ -48,25 +93,33 @@
     	align-items: center;
 	}
 	&__item-bar {
-		background: #ffffff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		background: #fff;
 		width: 240px;
+		height: 608px;
 		top: 50px;
-		left: 0px;
+		left: 0;
 		position: absolute;
-		transition: transform .3s;
-		transform: translateY(100);
-    	z-index: 10;
-    	overflow: hidden;
+		transition: transform .1s;
+		transform: scale(0);
+    	z-index: 1;
+		box-shadow: 5px 5px 3px;
+		overflow-y: scroll;
+		font-size: 14px;
+		color: #333333;
+		& li:hover {
+			color: $MenuItemHover;
+		}
 	}
 	&__item-buttom:hover .menu__item-bar {
-		transform: translateY(0);
+		transform: scale(100%);
 	}
-
 }
 
-
 .tariffs {
-	margin: 6px;
 	width: 260px;
 	@include flex ($jc: space-around,$ai: center);
 	& a:hover {
@@ -83,6 +136,12 @@
 		max-height: 30px;
 		border-radius: 5px;
 		@include flex();
+	}
+	&__buttom:hover {
+		border: 1px solid $MenuItemHover;
+		& a {
+			color: $MenuItemHover;
+		}
 	}
 	&__search img {
 		max-width: 20px;

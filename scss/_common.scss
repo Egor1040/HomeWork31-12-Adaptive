@@ -26,6 +26,7 @@ li {
 }
 
 .background {
+	height: 1080px;
 	background: url(../img/HeroBackground.jpg);
 	background-size: cover;
 	display: flex;
@@ -35,7 +36,7 @@ li {
 .card{
 	width: calc((100% - 1 * 2 * 5px) / 1);
 	max-width: 1140px;
-	height: 700px;
+	height: 625px;
 	background: url(../img/backgroud-img.jpg);
 	background-size: cover;
 	display: flex;
